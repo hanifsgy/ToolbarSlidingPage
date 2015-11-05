@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/content_frame"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/material_blue_grey_800"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <Button
+            android:id="@+id/pengamat"
+            android:text="Pengamat"
+            android:textColor="#FF2121"
+            android:textSize="10sp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/pengawas"
+            android:layout_toStartOf="@+id/pengawas"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp" />
+
+        <Button
+            android:id="@+id/pengawas"
+            android:text="pengawas"
+            android:textColor="#FF2121"
+            android:textSize="10sp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/notclickbuttonshape"
+            android:layout_alignTop="@+id/pengamat"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:id="@+id/saksi"
+            android:text="saksi"
+            android:textColor="#FF2121"
+            android:textSize="10sp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/notclickbuttonshape"
+            android:layout_alignTop="@+id/pengawas"
+            android:layout_alignRight="@+id/fabButton"
+            android:layout_alignEnd="@+id/fabButton" />
+
+
+
+
+        <com.tekinarslan.material.sample.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
